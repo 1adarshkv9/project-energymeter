@@ -44,7 +44,7 @@ def read_register(slave_address, register_address, num_registers):
     
     # Check if the response is valid
     if len(response) != 5 + 2 * num_registers:
-        print("Invalid response length")
+        #print("Invalid response length")
         return None
     
     # Extract the data bytes and CRC
